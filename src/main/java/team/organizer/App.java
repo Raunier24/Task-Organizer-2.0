@@ -1,6 +1,12 @@
+package team.organizer;
+
+import team.organizer.Task;
+
 import java.util.Scanner;
 
-public class Main {
+public final class App {
+    private App() {
+    }
     public static void main(String[] args) {
         Task.callCreate();
         Scanner scanner = new Scanner(System.in);
