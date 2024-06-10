@@ -1,17 +1,24 @@
 package team.organizer;
 
-/**
- * Hello world!
- */
-public final class App {
-    private App() {
-    }
+private static void Delete() {
+    do {
+        array.clear();
+        fillArray();
+        Output();
+        if (check()) {
+            input = scanner.nextLine();
+        }
+        if (input.equals("stop")) {
+            break;
+        }
+        Clear();
+        int inputInt = Integer.parseInt(input);
+        int inputPosition = inputInt - 1;
+        array.remove(inputPosition);
+        Writer();
+    } while (!input.equals("stop"));
+}
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
+public static void callDelete() {
+    Delete();
 }
