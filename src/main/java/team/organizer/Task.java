@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Tasks {
+public class Task {
     private static ArrayList<String> array = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
     private static String input;
@@ -160,5 +160,9 @@ public class Tasks {
 
     public static void callMarkAsDone() {
         MarkAsDone();
+    }
+
+    static void callSumar() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }
