@@ -1,7 +1,9 @@
 package team.organizer;
 
-public class Main {
-    public static void main(String[] args) {
+import java.util.Scanner;
+
+public class App {
+    public static void app(String[] args) {
         Task.callCreate();
         Scanner scanner = new Scanner(System.in);
         String userInput;
@@ -13,7 +15,7 @@ public class Main {
             switch (userInput) {
                 case "1":
                     System.out.println("You opened create");
-                    Tasks.callAddTask();
+                    Task.callAddTask();
                     break;
                 case "2":
                     System.out.println("You opened delete");
