@@ -65,5 +65,36 @@ public class Task {
             arrayPosition++;
         }
     }
+
+    private static void isEmptyOutput() {
+        if (array.isEmpty()) {
+            System.out.println("There isn't any task");
+        }
+        Output();
+    }
+
+    public static void callOutput () {
+        isEmptyOutput();
+    }
+
+    private static void Clear() {
+        try {
+            PrintWriter writer = new PrintWriter("ToDoList.txt");
+            writer.print("");
+            writer.close();
+        } catch (Exception error) {
+            error.printStackTrace();
+        }
+    }
+    private static boolean check() {
+        if(array.isEmpty()) {
+            System.out.println("There isn't any task");
+            input = "stop";
+            return false;
+        } else {
+            System.out.println("Write number of line what is done. (If you want to stop write 'stop')");
+            return true;
+        }
+    }
 }
 
