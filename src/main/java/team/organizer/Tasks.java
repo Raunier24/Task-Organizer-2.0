@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Task {
+public class Tasks {
     private static ArrayList<String> array = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
     private static String input;
