@@ -2,12 +2,13 @@ package team.organizer;
 
 import java.util.Scanner;
 
-public class App {
-    public static void app(String[] args) {
+public final class App {
+    private App() {
+    }
+    public static void main(String[] args) {
         Task.callCreate();
         Scanner scanner = new Scanner(System.in);
         String userInput;
-        Task.callSumar();
         System.out.println("Welcome to the ToDo List\n=========================");
         do {
             System.out.println("Select: (1.Add task) (2.Delete task) (3.List of tasks) (4.Mark as Done) (5.Exit)");

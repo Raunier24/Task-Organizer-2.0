@@ -161,8 +161,4 @@ public class Task {
     public static void callMarkAsDone() {
         MarkAsDone();
     }
-
-    static void callSumar() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
 }
